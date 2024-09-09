@@ -1309,6 +1309,13 @@ p {
     margin-right: 0;
   }
 
+  .section-2 {
+    background-image: radial-gradient(circle, #000000db 10%, #00000094 66%, #00fcc71c), url('../images/shutterstock_1128085853.jpg');
+    background-position: 0 0, 100%;
+    background-size: auto, cover;
+    background-attachment: scroll, fixed;
+  }
+
   .image-2 {
     margin-left: -107px;
   }
@@ -1505,6 +1512,7 @@ p {
   }
 
   .image-4 {
+    margin-top: -3px;
     position: relative;
     top: 206px;
     left: -588px;
@@ -1650,7 +1658,13 @@ p {
     text-align: center;
   }
 
+  .section-2 {
+    background-color: #1b1b1b;
+    background-position: 0 0, 80%;
+  }
+
   .image-2 {
+    margin-left: 2px;
     top: 15px;
     left: 2px;
   }
@@ -1659,8 +1673,14 @@ p {
     top: 0;
   }
 
+  .image-4 {
+    margin-top: -91px;
+    margin-left: 179px;
+    top: 60px;
+  }
+
   .image-5 {
-    margin-top: -761px;
+    margin-top: -605px;
     margin-left: 290px;
   }
 
