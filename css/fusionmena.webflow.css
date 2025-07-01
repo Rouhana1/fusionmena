@@ -1977,5 +1977,15 @@ p {
   p {
     word-wrap: break-word;
   }
+
+  #services .w-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #services .w-col {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
 }
 
