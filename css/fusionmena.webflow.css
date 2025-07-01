@@ -1936,56 +1936,28 @@ p {
 /* === MOBILE-ONLY FIXES === */
 @media screen and (max-width: 767px) {
 
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+  #services .w-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0 !important;   /* kill negative gutter */
+    margin-right: 0 !important;
   }
 
-  .w-layout-blockcontainer {
-    max-width: none;
-    padding-left: 15px;
-    padding-right: 15px;
+  #services .w-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding-left: 20px;   /* safe side padding */
+    padding-right: 20px;
     box-sizing: border-box;
   }
 
-  .w-row {
-    flex-wrap: wrap;
-  }
-
-  .w-col {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .logo-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 16px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  h1, h2, h3, h4, h5, h6,
-  .process-titles {
+  #services .process-titles,
+  #services p {
     word-wrap: break-word;
     overflow-wrap: break-word;
     hyphens: auto;
   }
 
-  p {
-    word-wrap: break-word;
-  }
-
-  #services .w-row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  #services .w-col {
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-  }
 }
+
 
