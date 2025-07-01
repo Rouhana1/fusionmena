@@ -1,3 +1,5 @@
+
+
 :root {
   --dark-slate-gray: #4d4d4d;
   --dark-slate-gray-2: #323232;
@@ -5,6 +7,7 @@
   --white-smoke: #f7f7f7;
   --light-gray: #d1d1d1;
 }
+
 
 .w-layout-blockcontainer {
   max-width: 940px;
@@ -1928,5 +1931,51 @@ p {
   font-size: 20px;
   margin-right: 10px;
   flex-shrink: 0;
+}
+
+/* === MOBILE-ONLY FIXES === */
+@media screen and (max-width: 767px) {
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .w-layout-blockcontainer {
+    max-width: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  .w-row {
+    flex-wrap: wrap;
+  }
+
+  .w-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .logo-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 16px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .process-titles {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+
+  p {
+    word-wrap: break-word;
+  }
 }
 
