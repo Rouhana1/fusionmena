@@ -1,6 +1,7 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Sep 09 2024 02:44:51 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="66d76fc063f901399da7f604" data-wf-site="66d76fbf63f901399da7f582">
 <head>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <meta charset="utf-8">
   <title>FUSION MENA</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -16,16 +17,27 @@
   <link href="images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
+<script>
+  window.addEventListener('scroll', () => {
+    const section = document.querySelector('.section-partners');
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      section.classList.add('is-visible');
+    }
+  });
+</script>
+
 <body>
   <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
     <div class="w-container">
       <a href="index.html" aria-current="page" class="brand w-clearfix w-nav-brand w--current">
         <div class="logo-text">FUSION MENA</div>
       </a>
-      <nav role="navigation" class="nav-menu w-nav-menu">
+      <nav role="navigation" class="nav-menu w-nav-menu"style="margin-right: -50px">
         <a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
         <a href="#services" class="nav-link w-nav-link">Services</a>
         <a href="#about-us" class="nav-link w-nav-link">About us</a>
+        <a href="#merchant-acquisition" class="nav-link w-nav-link">Merchant Acquisition</a>
         <a href="contact.html" class="nav-link w-nav-link">Contact</a>
         <a href="#" class="nav-link w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link">Facebook</a>
         <a href="#" class="nav-link w-hidden-main w-hidden-medium w-hidden-small w-hidden-tiny w-nav-link">Twitter</a>
@@ -37,33 +49,76 @@
   </div>
   <div class="section-2">
     <div class="container w-container"><img src="images/Horizontal-Logo-4.png" loading="lazy" width="659" sizes="(max-width: 767px) 100vw, 659px" alt="" srcset="images/Horizontal-Logo-4-p-500.png 500w, images/Horizontal-Logo-4-p-800.png 800w, images/Horizontal-Logo-4-p-1080.png 1080w, images/Horizontal-Logo-4-p-1600.png 1600w, images/Horizontal-Logo-4-p-2000.png 2000w, images/Horizontal-Logo-4-p-2600.png 2600w, images/Horizontal-Logo-4-p-3200.png 3200w, images/Horizontal-Logo-4.png 4500w" class="image-2">
-      <div class="horizontal-bar"></div>
       <div class="main-subheading">Empowering Brands Through Influencer Connections</div>
       <a href="contact.html" class="button">Get in touch</a>
     </div>
   </div>
+
+  
   <div id="services" class="section beige">
     <div class="w-container">
       <div class="number-copy">WHAT WE DO</div>
       <div class="w-row">
-        <div class="w-col w-col-4">
-          <div class="process-titles">BUILDING INFLUENCER MARKETING STRATEGIES &amp; IDEATION FOR BRANDS<br></div>
-          <div class="icon-wrapper"><img src="images/Screenshot_2024-09-05_at_9.06.19_PM-removebg-preview.png" width="148" sizes="148px" srcset="images/Screenshot_2024-09-05_at_9.06.19_PM-removebg-preview-p-500.png 500w, images/Screenshot_2024-09-05_at_9.06.19_PM-removebg-preview.png 549w" alt="" class="image-9"></div>
-          <p class="paragraph-2">We develop customized influencer marketing strategies that resonate with your brand&#x27;s identity and objectives. Our team collaborates closely with you to create innovative campaign ideas that captivate audiences and drive results.<br></p>
+        <!-- CARD 1 -->
+        <div class="w-col w-col-3">
+          <div class="card-wrapper">
+            <div class="process-titles">BUILDING INFLUENCER MARKETING STRATEGIES & IDEATION FOR BRANDS</div>
+            <div class="horizontal-bar"></div>
+            <div class="icon-wrapper">
+              <i class="ph ph-lightbulb"></i>
+            </div>
+            <p class="paragraph-2">
+              We develop customized influencer marketing strategies that resonate with your brand's identity and objectives. Our team collaborates closely with you to create innovative campaign ideas that captivate audiences and drive results.
+            </p>
+          </div>
         </div>
-        <div class="w-col w-col-4">
-          <div class="process-titles">RECOMMENDING KEY OPINION LEADERS (KOLS) FOR INFLUENCER CAMPAIGNS<br></div>
-          <div class="icon-wrapper"><img src="images/Screenshot_2024-09-05_at_9.04.57_PM-removebg-preview.png" width="234" sizes="(max-width: 479px) 83vw, (max-width: 767px) 234px, (max-width: 991px) 229.328125px, 234px" srcset="images/Screenshot_2024-09-05_at_9.04.57_PM-removebg-preview-p-500.png 500w, images/Screenshot_2024-09-05_at_9.04.57_PM-removebg-preview.png 704w" alt="" class="image-8"></div>
-          <p class="paragraph-3">Leveraging our extensive network, we identify and recommend the most suitable KOLs and influencer profiles that align with your brand values and target audience. Our careful selection process ensures authentic connections that enhance campaign effectiveness.<br><br></p>
+  
+        <!-- CARD 2 -->
+        <div class="w-col w-col-3">
+          <div class="card-wrapper">
+            <div class="process-titles">RECOMMENDING KEY OPINION LEADERS FOR INFLUENCER CAMPAIGNS</div>
+            <div class="horizontal-bar"></div>
+            <div class="icon-wrapper" >
+              <i class="ph ph-users-three"></i>
+            </div>
+            <p class="paragraph-2">
+              Leveraging our extensive network, we identify and recommend the most suitable KOLs and influencer profiles that align with your brand values and target audience. Our careful selection process ensures authentic connections that enhance campaign effectiveness.
+            </p>
+          </div>
         </div>
-        <div class="w-col w-col-4">
-          <div class="process-titles">MONITORING CAMPAIGN PERFORMANCE AND ENSURING KPIS ARE MET<br><br></div>
-          <div class="icon-wrapper"><img src="images/Screenshot_2024-09-05_at_9.02.52_PM-removebg-preview.png" width="196" alt="" class="image-3"></div>
-          <p class="paragraph">Our dedicated team continuously monitors campaign performance, analyzing key metrics to ensure your goals and KPIs are achieved. We provide detailed reports and insights, allowing you to measure success and make informed decisions.<br><br><br></p>
+  
+        <!-- CARD 3 -->
+        <div class="w-col w-col-3">
+          <div class="card-wrapper">
+            <div class="process-titles">MONITORING CAMPAIGN PERFORMANCE AND ENSURING KPIS ARE MET</div>
+            <div class="horizontal-bar"></div>
+            <div class="icon-wrapper">
+              <i class="ph ph-chart-line-up"></i>
+            </div>
+            <p class="paragraph-2">
+              Our dedicated team continuously monitors campaign performance, analyzing key metrics to ensure your goals and KPIs are achieved. We provide detailed reports and insights, allowing you to measure success and make informed decisions.
+            </p>
+          </div>
+        </div>
+  
+        <!-- CARD 4 -->
+        <div class="w-col w-col-3">
+          <div class="card-wrapper">
+            <div class="process-titles">POWERING LOYALTY PROGRAMS WITH MERCHANT NETWORKS</div>
+            <div class="horizontal-bar"></div>
+            <div class="icon-wrapper" >
+              <i class="ph ph-globe"></i>
+            </div>
+            <p class="paragraph-2">
+              We drive the strategic acquisition of high-quality merchants for rewards and loyalty programs across the MENAT region, Africa, and East Asia. With over 20 years of combined expertise in media, marketing, and loyalty, we help brands and platforms build high-impact ecosystems that deliver measurable value.            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  
+
+
   <div id="about-us" class="section image">
     <div class="w-container">
       <div class="number">About us</div>
@@ -173,6 +228,137 @@
       </div>
     </div>
   </section>
+  <div id="merchant-acquisition" class="section beige">
+    <div class="w-container">
+      <div class="number-copy">MERCHANT ACQUISITION & REWARDS STRATEGY</div>
+      <!-- <h1 class="heading" style="margin-left: 215px; font-size: 20px;">Powering Loyalty Programs with Exceptional Merchant Networks</h1> -->
+      <!-- <div class="horizontal-bar" style="margin-left: 440px;"></div> -->
+  
+
+  
+      <div class="w-row">
+        <!-- LEFT COLUMN -->
+        <div class="w-col w-col-6">
+          <h3 class="process-titles">For Brands & Merchants</h3>
+          <ul class="paragraph-2 merchant-list">
+            <li>
+              <div class="text-tag-2">
+                <i class="ph ph-eye"></i>
+                <span>Boost Visibility — Get listed in high-traffic loyalty platforms with millions of users.</span>
+              </div>
+            </li>
+            <li>
+              <div class="text-tag-2">
+                <i class="ph ph-users"></i>
+                <span>Drive Footfall & Orders — Attract new and returning customers via targeted reward campaigns.</span>
+              </div>
+            </li>
+            <li>
+              <div class="text-tag-2">
+                <i class="ph ph-rocket"></i>
+                <span>Strategic Growth Support — Leverage our in-house social media & influencer marketing team.</span>
+              </div>
+            </li>
+            <li>
+              <div class="text-tag-2">
+                <i class="ph ph-handshake"></i>
+                <span>Partner with Leaders — Gain exposure through platforms powered by Visa, Samsung Pay, and others.</span>
+              </div>
+            </li>
+           
+          </ul>
+        </div>
+      
+        <!-- RIGHT COLUMN -->
+        <div class="w-col w-col-6">
+          <h3 class="process-titles">For Loyalty & Rewards Programs</h3>
+          <ul class="paragraph-2 merchant-list">
+            <li>
+              <div class="text-tag-2">
+                <i class="ph ph-map-pin"></i>
+                <span>Regional Reach — On-ground merchant acquisition teams across MENAT, Africa & South Asia.</span>
+              </div>
+            </li>
+            <li>
+              <div class="text-tag-2">
+                <i class="ph ph-chart-line-up"></i>
+                <span>Proven Conversions — From pitch to sign-up, we guarantee measurable results.</span>
+              </div>
+            </li>
+            <li>
+              <div class="text-tag-2">
+                <i class="ph ph-gear"></i>
+                <span>Full-Cycle Support — Sourcing, vetting, negotiating, onboarding, and activation.</span>
+              </div>
+            </li>
+            <li>
+              <div class="text-tag-2">
+                <i class="ph ph-globe"></i>
+                <span>Scalable Partnerships — Whether launching or expanding, we tailor merchant sourcing to your goals.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="w-row">
+        <div class="w-col w-col-12">
+          <div class="text-tag-2 summary">
+            <span style="color: #ffffff;">Whether you’re a restaurant, spa, gym, salon, or retailer — we ensure your offers stand out in a competitive loyalty landscape.</span>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="section-partners">
+        <div class="w-row">
+          <div class="w-col w-col-12">
+            <h3 class="process-titles">Who We’ve Worked With</h3>
+            <div class="w-row" style="margin-top:30px;text-align:center;">
+              <div class="w-col w-col-12">
+                <p class="paragraph-2" style="margin-bottom:20px; margin-top:-10px; color: #ffffff;">
+                  Trusted by some of the most prestigious rewards platforms and financial institutions in the region and beyond
+                </p>
+              </div>
+            </div>
+            <div class="horizontal-bar" style="margin-left: 426px"></div>
+            <div class="logo-grid">
+              <img src="images/visalogo.png" alt="VISA">
+              <img src="images/mastercard_logo.png" alt="MasterCard">
+              <img src="images/hsbc2_logo.png" alt="HSBC">
+              <img src="images/emaar2.webp" alt="Emaar">
+              <img src="images/du_logo.webp" alt="DU">
+              <img src="images/vodafone_logo.png" alt="Vodafone">
+              <img src="images/rfm_logo.jpg" alt="RFM Loyalty">
+              <img src="images/samsungpay2_logo.webp" alt="Samsung Pay">
+              <img src="images/cairo_logo.png" alt="Cairo Festival City">
+              <img src="images/bank_logo.png" alt="Al Hilal Bank">
+              <img src="images/doha_logo.png" alt="Bank of Doha">
+              <img src="images/muscat2_logo.png" alt="Bank of Muscat">
+              <img src="images/omantel_logo.png" alt="Oman Tel">
+              <img src="images/nbo_logo.png" alt="National Bank of Oman">
+              <img src="images/teamsaudi_logo.png" alt="Team Saudi">
+              <img src="images/m1_logo.png" alt="M1 Singapore">
+              <img src="images/myrepublic_logo.png" alt="MyRepublic Singapore">
+              <img src="images/mimojo_logo.png" alt="Mimojo">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+  
+      <div class="w-row" style="margin-top:30px;text-align:center;">
+        <div class="w-col w-col-12">
+          <p class="paragraph-2">
+            If you’re looking to enhance your rewards program with high-value merchants, or if you’re a brand seeking more exposure and customer engagement—let’s connect.<br><br>
+             <a href="mailto:campaign@fusionmena.com">campaign@fusionmena.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <div class="section footer">
     <div class="w-container">
       <div class="w-row">

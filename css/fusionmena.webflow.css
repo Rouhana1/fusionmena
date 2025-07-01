@@ -221,6 +221,37 @@ p {
   font-size: 25px;
   font-weight: 500;
 }
+.section-partners {
+  margin-top: 50px;   /* gives nice spacing from above */
+  padding-bottom: 60px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.section-partners.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 28px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.logo-grid img {
+  max-height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+
 
 .nav-menu {
   float: left;
@@ -316,9 +347,10 @@ p {
 
 .horizontal-bar {
   background-color: #fff;
-  width: 60px;
+  width: 80px;
   height: 2px;
-  display: inline-block;
+  display: block;
+
 }
 
 .horizontal-bar.beige {
@@ -368,7 +400,27 @@ p {
   text-align: center;
   height: 109px;
   margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
+.icon-wrapper i {
+  font-size: 68px;  /* Match your old image sizes */
+  color: #00fcc7;   /* Or #1CC5C5 if that’s your brand turquoise */
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.process-titles {
+  text-align: center;
+}
+
+
 
 .number {
   color: #00fcc7;
@@ -635,8 +687,21 @@ p {
 .paragraph-2 {
   color: #858585;
   font-size: 15px;
-  line-height: 24px;
+  line-height: 2
+  4px;
+  margin-top: auto;   /* pushes down evenly */
+  text-align: center; /* optional for consistent look */
 }
+#services .w-row {
+  margin-left: -70px;
+  margin-right: -70px;
+}
+
+#services .w-col {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 
 .paragraph-3 {
   color: #858585;
@@ -988,6 +1053,54 @@ p {
   position: static;
 }
 
+.text-tag-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;     /* Keep icon & text on same row */
+  align-items: flex-start;
+  gap: 10px;
+
+  max-width: 100%;
+  color: #fff;
+  text-align: left;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  background-color: #131313;
+  border: 1px solid #ffffff45;
+  border-radius: .25rem;
+  padding: 1.55rem .75rem;
+  font-size: .82rem;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+.text-tag-2.summary {
+  display: block;
+  text-align: center;
+  background-color: #131313;
+  border: 1px solid #ffffff87;
+  border-radius: .25rem;
+  padding: 1.3rem .75rem;
+  font-size: .86rem;
+  font-weight: 300;
+  line-height: 1.4em;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+
+.text-tag-2 i {
+  color: #00fcc7;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.text-tag-2 span {
+  word-wrap: break-word;
+}
+
+
+
 .features_card {
   grid-column-gap: 0rem;
   grid-row-gap: 0rem;
@@ -1266,6 +1379,8 @@ p {
     padding-left: 21px;
     padding-right: 21px;
   }
+
+
 
   .nav-menu {
     background-color: #323232;
@@ -1784,4 +1899,21 @@ p {
   place-self: auto;
 }
 
+.merchant-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.merchant-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.merchant-list i {
+  color: #00fcc7; /* Turquoise */
+  font-size: 20px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
 
