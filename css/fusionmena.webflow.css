@@ -290,8 +290,8 @@ p {
 }
 
 .section.beige {
-  background-color: #ffffff;
-  /* background-image: linear-gradient(#000, #000), url('../images/shutterstock_1128085853.jpg'); */
+  background-color: #000000;
+  background-image: linear-gradient(#000, #000), url('../images/shutterstock_1128085853.jpg');
   background-position: 0 0, 0 0;
   background-size: auto, cover;
   background-attachment: scroll, fixed;
@@ -707,7 +707,7 @@ p {
 #services .w-row {
   margin-left: -80px;
   margin-right: -80px;
-  justify-content: center; /* centers the cards horizontally */
+  justify-content: center; 
   display: flex;
   gap: 20px;
 
