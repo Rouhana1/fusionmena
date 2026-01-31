@@ -30,3 +30,14 @@ Curating, executing, and delivering events that leave an impression.
 Building and managing clients’ social media channels through creative, engaging content and active community management.
 ## Influencer Marketing:
 End-to-end influencer marketing campaign planning, covering strategy development, creative ideation, influencer outreach, campaign execution, and performance reporting.
+
+# Rewards & Loyalty Services:
+
+## Rewards & Loyalty Program & App.building
+Designing & building rewards and loyalty programs, supported by intuitive mobile applications, to drive customer engagement, retention, and long-term brand loyalty..
+
+## Consulting:
+Strategic advisory services to design, optimize, and scale effective rewards and loyalty programs that drive customer engagement and measurable business growth.
+
+## Merchants Acquisition for Reward Programs
+Identifying, onboarding, and managing merchant partners to build a strong and relevant rewards ecosystem.
