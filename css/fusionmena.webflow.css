@@ -284,7 +284,7 @@ p {
 
 .section.grey {
   color: #fff;
-  background-color: #333;
+  background-color: #141414;
   padding-top: 55px;
   padding-bottom: 55px;
 }
@@ -695,12 +695,12 @@ p {
   margin-top: auto;   /* pushes down evenly */
   text-align: center; /* optional for consistent look */
 }
-#services .w-row {
+.services-grid .w-row {
   margin-left: -70px;
   margin-right: -70px;
 }
 
-#services .w-col {
+.services-grid .w-col {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -1936,14 +1936,14 @@ p {
 /* === MOBILE-ONLY FIXES === */
 @media screen and (max-width: 767px) {
 
-  #services .w-row {
+  .services-grid .w-row {
     display: flex;
     flex-wrap: wrap;
     margin-left: 0 !important;   /* kill negative gutter */
     margin-right: 0 !important;
   }
 
-  #services .w-col {
+  .services-grid .w-col {
     flex: 1 1 100%;
     max-width: 100%;
     padding-left: 20px;   /* safe side padding */
@@ -1951,8 +1951,8 @@ p {
     box-sizing: border-box;
   }
 
-  #services .process-titles,
-  #services p {
+  .services-grid .process-titles,
+  .services-grid p {
     word-wrap: break-word;
     overflow-wrap: break-word;
     hyphens: auto;
